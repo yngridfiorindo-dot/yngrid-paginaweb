@@ -29,6 +29,9 @@
 
 .main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .cabecalho-link {
@@ -49,6 +52,12 @@
 
 .cartao-interno{
    position: relative;
+   transition: transfor, 0.8s;
+   transform-style: preserve-3d;
+}
+
+.cartao:hover .cartao-interno {
+    transform: rotateY(160deg);
 }
 
 .cartao-frente, .cartao-verso { 
@@ -57,6 +66,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     backface-visibility: hidden;
 }
+
 
 .cartao-verso {
     transform: rotateY(180deg);

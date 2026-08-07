@@ -24,13 +24,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(254, 120, 120);
+    background-color: rgb(255, 243, 243);
 }
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
@@ -52,12 +53,12 @@ footer {
 
 .cartao-interno{
    position: relative;
-   transition: transform, 0.8s;
+   transition: transform 0.8s;
    transform-style: preserve-3d;
 }
 
 .cartao:hover .cartao-interno {
-    transform: rotateY(160deg);
+    transform: rotateY(180deg);
 }
 
 .cartao-frente, .cartao-verso { 

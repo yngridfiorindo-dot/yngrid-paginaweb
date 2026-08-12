@@ -72,7 +72,7 @@ footer {
     transform: rotateY(180deg);
 }
 
-section{
+section {
     display: flex;
     gap: 16px;
 }
